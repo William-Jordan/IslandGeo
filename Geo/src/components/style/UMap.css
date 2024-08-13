@@ -1,0 +1,9 @@
+.timer {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  z-index: 1;
+}

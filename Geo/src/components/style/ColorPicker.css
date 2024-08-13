@@ -1,0 +1,86 @@
+.ColorPicker {
+  display: flex;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  width: 330px;
+}
+
+.ColorPicker .squares {
+  width: 285px;
+  background-color: lightgray;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.ColorPicker .color {
+  width: 45px;
+  height: 75px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.ColorPicker .rgb {
+  height: 25px;
+  display: flex;
+}
+
+.ColorPicker p {
+  margin-top: 7px;
+  font-weight: bold;
+}
+
+.ColorPicker .c {
+  width: 37px;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-right: 5px;
+}
+
+.ColorPicker label {
+  margin-right: 2px;
+  margin-top: 5px;
+  position: relative;
+  float: right;
+  text-align: right;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid black; */
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lower {
+  margin-top: 5px;
+}
+.center {
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
+  background: linear-gradient(
+    135deg,
+    red 0%,
+    orange 20%,
+    yellow 40%,
+    green 60%,
+    blue 80%,
+    purple 100%
+  );
+}
+
+/* hine input arrows */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+} */
