@@ -21,8 +21,8 @@ const UMap = () => {
 
   return (
     <>
-      <div className="timer"></div>
-      <div style={{ width: "99vw", height: "98vh", cursor: "pointer" }}>
+      {/* <div style={{ width: "99vw", height: "98vh", cursor: "pointer" }}> */}
+      <div className="map">
         <APIProvider apiKey={apiKey}>
           <Map
             defaultZoom={14.7}

@@ -18,7 +18,6 @@ app.get('/', (req, res) => {
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });
-  
 
 let items = [];
 
@@ -47,4 +46,16 @@ app.delete('/items/:id', (req, res) => {
   const id = parseInt(req.params.id);
   items = items.filter(item => item.id !== id);
   res.status(204).end();
+});
+
+// ==================================================
+let players = [];
+let rounds = [];
+
+app.get('/players', (req, res) => {
+  res.json(players);
+});
+
+app.get('/rounds', (req, res) => {
+  res.json(currentRound);
 });
