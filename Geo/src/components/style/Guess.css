@@ -1,0 +1,88 @@
+.Guess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.Guess .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.Guess img {
+  max-width: 99vw;
+  max-height: 48vh;
+}
+
+.Guess .map {
+  height: 50vh;
+  width: 99vw;
+  border: 1px solid darkgray;
+}
+
+.Guess .controls {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+  position: absolute;
+  top: 10px;
+}
+
+.Guess .btn {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  outline: none;
+  border: 1px solid rgb(50, 50, 50);
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Guess .exit {
+  background-color: rgb(240, 93, 93);
+}
+
+.Guess .submit {
+  background-color: lightgreen;
+  /* margin-right: 10px; */
+}
+
+/* Desktop Styles */
+@media (min-width: 1200px) {
+  .Guess {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Guess .info {
+    width: 50%;
+    height: 98vh;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .Guess img {
+    max-width: 49vw;
+    max-height: 99vh;
+  }
+
+  .Guess .map {
+    width: 50vw;
+    height: 98vh;
+  }
+
+  .Guess .controls {
+    position: absolute;
+    bottom: 10px;
+    height: 35px;
+  }
+}

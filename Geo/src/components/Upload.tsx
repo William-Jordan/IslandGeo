@@ -27,7 +27,7 @@ const Upload: React.FC = () => {
 
     try {
       const response = await axios.post<{ imageUrl: string }>(
-        "http://localhost:3000/upload",
+        "http://142.105.203.227:3000/upload",
         formData,
         {
           headers: {
